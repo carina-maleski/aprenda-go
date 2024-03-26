@@ -1,22 +1,22 @@
-// - Utilizando o operador curto de declaração, atribua estes valores às variáveis com os identificadores "x", "y", e "z".
-//     1. 42
-//     2. "James Bond"
-//     3. true
-// - Agora demonstre os valores nestas variáveis, com:
-//     1. Uma única declaração print
-//     2. Múltiplas declarações print
+// - Use var para declarar três variáveis. Elas devem ter package-level scope. Não atribua valores a estas variáveis. Utilize os seguintes identificadores e tipos para estas variáveis:
+//     1. Identificador "x" deverá ter tipo int
+//     2. Identificador "y" deverá ter tipo string
+//     3. Identificador "z" deverá ter tipo bool
+// - Na função main:
+//     1. Demonstre os valores de cada identificador
+//     2. O compilador atribuiu valores para essas variáveis. Como esses valores se chamam?
 
 package main
 
 import "fmt"
 
-func main() {
-	x := 42
-	y := "James Bond"
-	z := true
+var x int
+var y string
+var z bool
 
-	fmt.Println(x, y, z)
-	fmt.Printf("%v %T", x, x)
-	fmt.Printf("%v %T", y, y)
-	fmt.Printf("%v %T", z, z)
+func main() {
+
+	fmt.Println(x,y,z)
+	fmt.Printf("%v\n%v\n%v\n", x, y, z)
+	fmt.Print("Esses valores se chamam zero-values")
 }
