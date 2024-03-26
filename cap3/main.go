@@ -6,6 +6,7 @@ func main() {
 	ex1()
 	ex2()
 	ex3()
+	ex4()
 }
 
 // - Utilizando o operador curto de declaração, atribua estes valores às variáveis com os identificadores "x", "y", e "z".
@@ -68,5 +69,24 @@ func ex3() {
 
 	s := fmt.Sprintf("As variáveis são %v, %v e %v.\n", x3, y3, z3)
 	fmt.Println(s)
+}
+
+// - Crie um tipo. O tipo subjacente deve ser int.
+// - Crie uma variável para este tipo, com o identificador "x", utilizando a palavra-chave var.
+// - Na função main:
+//     1. Demonstre o valor da variável "x"
+//     2. Demonstre o tipo da variável "x"
+//     3. Atribua 42 à variável "x" utilizando o operador "="
+//     4. Demonstre o valor da variável "x"
+
+type Oi int
+var x4 Oi 
+
+func ex4() {
+	fmt.Println("Exercício 4")
+	fmt.Println(x4)
+	x4 = 4837
+	fmt.Println(x4)
+	fmt.Printf("O valor de x4 é %v e o seu tipo é %T", x4, x4)
 }
 
