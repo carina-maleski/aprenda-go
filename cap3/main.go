@@ -7,6 +7,7 @@ func main() {
 	ex2()
 	ex3()
 	ex4()
+	ex5()
 }
 
 // - Utilizando o operador curto de declaração, atribua estes valores às variáveis com os identificadores "x", "y", e "z".
@@ -43,7 +44,7 @@ var y2 string
 var z2 bool
 
 func ex2() {
-	fmt.Println("Exercício 2")
+	fmt.Println("\nExercício 2")
 
 	fmt.Println(x2, y2, z2)
 	fmt.Printf("%v\n%v\n%v\n", x2, y2, z2)
@@ -65,7 +66,7 @@ var y3 string = "James Bond"
 var z3 bool = true
 
 func ex3() {
-	fmt.Println("Exercício 3")
+	fmt.Println("\nExercício 3")
 
 	s := fmt.Sprintf("As variáveis são %v, %v e %v.\n", x3, y3, z3)
 	fmt.Println(s)
@@ -90,3 +91,29 @@ func ex4() {
 	fmt.Printf("O valor de x4 é %v e o seu tipo é %T", x4, x4)
 }
 
+// - Utilizando a solução do exercício anterior:
+//     1. Em package-level scope, utilizando a palavra-chave var, crie uma variável com o identificador "y". O tipo desta variável deve ser o tipo subjacente do tipo que você criou no exercício anterior.
+//     2. Na função main:
+//         1. Isto já deve estar feito:
+//             1. Demonstre o valor da variável "x"
+//             2. Demonstre o tipo da variável "x"
+//             3. Atribua 42 à variável "x" utilizando o operador "="
+//             4. Demonstre o valor da variável "x"
+//         2. Agora faça tambem:
+//             1. Utilize conversão para transformar o tipo do valor da variável "x" em seu tipo subjacente e, utilizando o operador "=", atribua o valor de "x" a "y"
+//             2. Demonstre o valor de "y"
+//             3. Demonstre o tipo de "y"
+
+var y5 int
+func ex5() {
+	fmt.Println("\n\nExercício 5")
+	fmt.Printf("O valor de x4 é %v e o seu tipo é %T\n", x4, x4)
+
+	x4 = 42
+
+	fmt.Println(x4)
+
+	y5 = int(x4)
+
+	fmt.Printf("O valor de y5 é %v e o seu tipo é %T\n",y5,y5)
+}
